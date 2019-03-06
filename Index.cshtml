@@ -1,0 +1,309 @@
+﻿@model Allmark.Models.HomeModel
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<style>
+        .login-main-container {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-image: url('../../Content/Images/Labels.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+            .login-main-container::before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(255,255,255,0.9);
+            }
+
+        .login-sub-container {
+            width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 55px 55px 37px 55px;
+            background: #9152f8;
+            background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+            background: -o-linear-gradient(top, #7579ff, #b224ef);
+            background: -moz-linear-gradient(top, #7579ff, #b224ef);
+            background: linear-gradient(top, #7579ff, #b224ef);
+        }
+
+        .login-form-logo {
+            font-size: 60px;
+            color: #333333;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .login-title {
+            font-family: Poppins-Medium;
+            font-size: 30px;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .user-text-box {
+            font-family: Poppins-Regular;
+            font-size: 16px;
+            line-height: 1.2;
+            display: block;
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            padding: 0 5px 0 38px;
+            background-image: url('../../Content/Images/user_black.png');
+            background-size: 25px 25px;
+            background-position: 5px 5px;
+            background-repeat: no-repeat;
+        }
+
+        .password-text-box {
+            font-family: Poppins-Regular;
+            font-size: 16px;
+            line-height: 1.2;
+            display: block;
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            padding: 0 5px 0 38px;
+            background-image: url('../../Content/Images/lock_black.png');
+            background-size: 25px 25px;
+            background-position: 5px 5px;
+            background-repeat: no-repeat;
+        }
+
+        .login-main-container-form-btn {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .login-main-btn {
+            font-family: Poppins-Medium;
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.2;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            min-width: 120px;
+            height: 50px;
+            border-radius: 25px;
+            background: #9152f8;
+            background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+            background: -o-linear-gradient(bottom, #7579ff, #b224ef);
+            background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
+            background: linear-gradient(bottom, #7579ff, #b224ef);
+            position: relative;
+            z-index: 1;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+            .login-main-btn::before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+
+        .p-t-90 {
+            padding-top: 90px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .p-b-34 {
+            padding-bottom: 34px;
+        }
+
+        .p-t-27 {
+            padding-top: 27px;
+        }
+    </style>*@
+
+<div id="myCarousel" class="carousel slide home-slide-div" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        @*<div class="item active">
+            <img src="~/Content/Images/Slider_Images/Allmark_00.jpg" alt="Image" style="width:100%;" />
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Images/Slider_Images/Allmark_01.jpg" alt="Image" style="width:100%;" />
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Images/Slider_Images/Allmark_02.jpg" alt="Image" style="width:100%;" />
+        </div>*@
+
+
+        <div class="item active">
+            <img src="~/Content/Images/Temp_Images/Temp_Slider/temp_slider_01.jpg" style="width:100%;height:600px;" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/Temp_Images/Temp_Slider/temp_slider_02.jpg" style="width:100%;height:600px;" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/Temp_Images/Temp_Slider/temp_slider_03.jpg" style="width:100%;height:600px;" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/Temp_Images/Temp_Slider/temp_slider_00.jpg" style="width:100%;height:600px;" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/Temp_Images/Temp_Slider/temp_slider_04.jpg" style="width:100%;height:600px;" />
+        </div>
+
+    </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+<!--------------- Modal ------------------->
+
+<div id="LoginPopupModel" class="modal popup-shadow" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="text-align:center;">
+            <div class="modal-header">
+                <button type="button" class="close" onclick='$("#LoginPopupModel").hide()'>&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="limiter">
+                    <div class="login-main-container">
+                        <div class="login-sub-container">
+                            @using (Html.BeginForm("UserLogin", "Home", FormMethod.Post))
+                            {
+                                <span class="login-form-logo">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </span>
+
+                                <span class="login-title p-b-34 p-t-27">
+                                    Log in
+                                </span>
+
+                                @Html.TextBoxFor(m => m.Username, new { @class = "user-text-box", required = "required", placeholder = "Username", autocomplete = "off" })
+                                <br />
+                                @Html.PasswordFor(m => m.Password, new { @class = "password-text-box", required = "required", placeholder = "Password", autocomplete = "off" })
+                                <br />
+
+                                <div class="login-main-container-form-btn">
+                                    <button class="login-main-btn">
+                                        Login
+                                    </button>
+                                </div>
+                                @*<div class="text-center p-t-90">
+                                        <a class="txt1" href="#">
+                                            Forgot Password?
+                                        </a>
+                                    </div>*@
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //// =========================================== Default =========================================== ////
+
+            //$("#render_Body_Div").removeClass("col-md-7");
+            //$("#render_Body_Div").addClass("col-md-12");
+
+            @*var login_fail = @Html.Raw(Json.Encode(TempData["Check"]));
+
+            if (login_fail != null && login_fail == "1")
+            {
+                showMessageBar("Check Your username or password", "error");
+            }*@
+
+        });
+
+    </script>
+
+}
